@@ -21,5 +21,7 @@ Below Steps will help to install Process Exporter and link it to the Cluster.
 
 # 3.Check the metrics on Grafana 
 To Search all of the time series data points grouping by job  
+To Findout how many processes have been started under metrics namespace
 
         count({__name__=~".+"}) by (job)
+        process_start_time_seconds{namespace="metrics"}

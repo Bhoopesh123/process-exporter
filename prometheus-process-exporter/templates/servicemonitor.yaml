@@ -24,6 +24,7 @@ spec:
     matchLabels:
       app: {{ template "prometheus-process-exporter.name" . }}
       release: "{{ .Release.Name }}"
+      release: grafana
   namespaceSelector:
     matchNames:
       - {{ .Release.Namespace }}
