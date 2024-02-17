@@ -25,3 +25,8 @@ To Findout how many processes have been started under metrics namespace
 
         count({__name__=~".+"}) by (job)
         process_start_time_seconds{namespace="metrics"}
+
+# 4. Import the below sample dashboard  
+https://grafana.com/grafana/dashboards/249-named-processes/
+
+Dashboard ID: 249
