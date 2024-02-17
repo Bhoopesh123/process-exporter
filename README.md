@@ -20,5 +20,6 @@ Below Steps will help to install Process Exporter and link it to the Cluster.
     helm upgrade --install process prometheus-process-exporter/ --debug --create-namespace --namespace metrics --timeout 10m 
 
 # 3.Check the metrics on Grafana 
-To Search all of the time series data points grouping by job
+To Search all of the time series data points grouping by job  
+
         count({__name__=~".+"}) by (job)
