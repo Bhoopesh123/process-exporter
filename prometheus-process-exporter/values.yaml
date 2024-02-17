@@ -19,7 +19,12 @@ groups:
   - scp
 - comm:
   - ssh
-
+- comm:
+  - chromium-browse
+- comm:
+  - prometheus
+- comm:
+  - gvim  
 ## Creates a Prometheus Operator ServiceMonitor
 serviceMonitor:
   enabled: true
